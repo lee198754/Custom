@@ -2,7 +2,7 @@ package my;
 
 {$R *.res}
 {$R 'NumEdit\NumEdit.dcr'}
-{$R 'ListViewEh\ListViewEh.dcr'}
+{$R 'ListViewEH\ListViewEH.dcr'}
 {$ALIGN 8}
 {$ASSERTIONS ON}
 {$BOOLEVAL OFF}
@@ -32,7 +32,7 @@ requires
 
 contains
   NumEdit in 'NumEdit\NumEdit.pas',
-  ListViewEh in 'ListViewEh\ListViewEh.pas';
+  ListViewEH in 'ListViewEH\ListViewEH.pas';
 
 end.
 

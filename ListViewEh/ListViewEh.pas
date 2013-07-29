@@ -14,6 +14,7 @@ type
     FRowHight: Integer;
     FRowColorOne: TColor;
     FRowColorSec: TColor;
+  protected
     procedure SetRowHight(const Value: Integer);
     procedure SetRowColorOne(const Value: TColor);
     procedure SetRowColorSec(const Value: TColor);
@@ -38,11 +39,11 @@ type
     FColSort: PColSort;
     FSmallImages: TCustomImageList;
     FOptionsEh: TOptionsEh;
+  protected
+    { Protected declarations }
     procedure LVDrawItem(Sender: TCustomListView; Item: TListItem; State: TCustomDrawState;
       var DefaultDraw: Boolean);
     procedure SetOptionsEh(const Value: TOptionsEh);
-  protected
-    { Protected declarations }
     procedure MouseDown(Button: TMouseButton; Shift: TShiftState; X, Y: Integer); override;
     procedure ColClick(Column: TListColumn); override;
     procedure Click;override;
@@ -215,7 +216,7 @@ var
   fLVDrawItem: TLVCustomDrawItemEvent;
 begin
   fLVDrawItem := LVDrawItem;
-  if @fLVDrawItem <> @OnCustomDrawItem then
+  if (@fLVDrawItem <> @OnCustomDrawItem) or Assigned(OnAdvancedCustomDrawItem) then
     inherited CustomDrawItem(Item,State,Stage);
   LVDrawItem(TCustomListView(Self),Item,State,Result);
 end;
