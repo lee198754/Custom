@@ -3,6 +3,7 @@ package my;
 {$R *.res}
 {$R 'NumEdit\NumEdit.dcr'}
 {$R 'ListViewEH\ListViewEH.dcr'}
+{$R '..\Imports\TMNC_OCX_TLB.dcr'}
 {$ALIGN 8}
 {$ASSERTIONS ON}
 {$BOOLEVAL OFF}
@@ -32,7 +33,10 @@ requires
 
 contains
   NumEdit in 'NumEdit\NumEdit.pas',
-  ListViewEH in 'ListViewEH\ListViewEH.pas';
+  ListViewEH in 'ListViewEH\ListViewEH.pas',
+  TMNC_OCX_TLB in '..\Imports\TMNC_OCX_TLB.pas',
+  EditEh in 'EditEh\EditEh.pas',
+  MemoEh in 'MemoEh\MemoEh.pas';
 
 end.
 

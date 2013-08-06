@@ -111,7 +111,7 @@ AutoIncBuild=0
 MajorVer=4
 MinorVer=3
 Release=2
-Build=164
+Build=177
 Debug=0
 PreRelease=0
 Special=0
@@ -122,7 +122,7 @@ CodePage=1252
 [Version Info Keys]
 CompanyName=Raize Software, Inc.
 FileDescription=Raize Components 4 Package
-FileVersion=4.3.2.164
+FileVersion=4.3.2.177
 InternalName=
 LegalCopyright=Copyright ? 1995-2007 Raize Software, Inc.
 LegalTrademarks=
@@ -130,7 +130,7 @@ OriginalFilename=
 ProductName=Raize Components
 ProductVersion=4.3.2.0
 Comments=
-LastCompiledTime=2013/7/29 11:30:31
+LastCompiledTime=2013/8/6 11:10:11
 [Excluded Packages]
 d:\borland\delphi7\Bin\dclite70.bpl=Borland Integrated Translation Environment
 [Exception Log]
